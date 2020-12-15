@@ -1,12 +1,12 @@
 # Flexible Neural Network Activation Quantization with Bitwise Information Bottlenecks
 
 ### **Introduction**
-Recent researches on information bottleneck shed new light on the continuous 
+Recent researches on information theory shed new light on the continuous 
 attempts to open the black box of neural signal encoding. Inspired by the 
 problem of lossy signal compression for wireless communication, 
-this paper presents a Bitwise Information Bottleneck approach for quantizing 
+this paper presents a Bitwise Bottleneck approach for quantizing 
 and encoding neural network activations. Based on the rate-distortion theory, 
-the Bitwise Information Bottleneck attempts to determine the most significant bits in activation representation by assigning and approximating the sparse coefficient associated with each bit. Given the constraint of a limited average code rate, the information bottleneck minimizes the rate-distortion for optimal activation quantization in a flexible layer-by-layer manner.
+the Bitwise Information Bottleneck attempts to determine the most significant bits in activation representation by assigning and approximating the sparse coefficient associated with each bit. Given the constraint of a limited average code rate, the information bottleneck minimizes the distortion for optimal activation quantization in a flexible layer-by-layer manner.
 
 
 
@@ -25,7 +25,7 @@ Extraction code: 5hup.
 
 
 
-### **Run Bitwise Information Bottleneck**
+### **Run Bitwise Bottleneck**
 To begin, you will need to download the ImageNet dataset and convert it to
 TFRecord format.
 
