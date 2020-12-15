@@ -1,0 +1,146 @@
+2020-06-05 23:12:15.591611: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2020-06-05 23:12:15.615177: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3500000000 Hz
+2020-06-05 23:12:15.616490: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55cd886ff810 executing computations on platform Host. Devices:
+2020-06-05 23:12:15.616533: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-06-05 23:12:15.623694: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-06-05 23:12:15.858014: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55cd887366d0 executing computations on platform CUDA. Devices:
+2020-06-05 23:12:15.858065: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): TITAN Xp, Compute Capability 6.1
+2020-06-05 23:12:15.858080: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (1): TITAN Xp, Compute Capability 6.1
+2020-06-05 23:12:15.862409: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:1a:00.0
+2020-06-05 23:12:15.863622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 1 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:68:00.0
+2020-06-05 23:12:15.867142: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2020-06-05 23:12:15.873156: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2020-06-05 23:12:15.876691: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10
+2020-06-05 23:12:15.878257: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10
+2020-06-05 23:12:15.882472: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10
+2020-06-05 23:12:15.884647: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10
+2020-06-05 23:12:15.892262: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-06-05 23:12:15.895954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0, 1
+2020-06-05 23:12:15.896005: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2020-06-05 23:12:15.898407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-06-05 23:12:15.898419: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 1 
+2020-06-05 23:12:15.898425: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N Y 
+2020-06-05 23:12:15.898430: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 1:   Y N 
+2020-06-05 23:12:15.900422: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/device:GPU:0 with 11436 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:1a:00.0, compute capability: 6.1)
+2020-06-05 23:12:15.901637: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/device:GPU:1 with 11039 MB memory) -> physical GPU (device: 1, name: TITAN Xp, pci bus id: 0000:68:00.0, compute capability: 6.1)
+I0605 23:12:15.902771 140224712554240 cross_device_ops.py:1174] Device is available but not used by distribute strategy: /device:CPU:0
+I0605 23:12:15.903628 140224712554240 cross_device_ops.py:1174] Device is available but not used by distribute strategy: /device:XLA_CPU:0
+I0605 23:12:15.903816 140224712554240 cross_device_ops.py:1174] Device is available but not used by distribute strategy: /device:XLA_GPU:0
+I0605 23:12:15.903985 140224712554240 cross_device_ops.py:1174] Device is available but not used by distribute strategy: /device:XLA_GPU:1
+I0605 23:12:15.904446 140224712554240 run_config.py:558] Initializing RunConfig with distribution strategies.
+I0605 23:12:15.904570 140224712554240 estimator_training.py:167] Not using Distribute Coordinator.
+I0605 23:12:15.905187 140224712554240 estimator.py:209] Using config: {'_model_dir': '/home/zxc/Liu/models-master-new/official/r1/resnet/model/', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 2000, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': <tensorflow.python.distribute.mirrored_strategy.MirroredStrategyV1 object at 0x7f883c42f208>, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f883c42ffd0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_distribute_coordinator_mode': None}
+I0605 23:12:17.231344 140224712554240 logger.py:152] Benchmark run: {'model_name': 'resnet', 'dataset': {'name': 'ImageNet'}, 'machine_config': {'cpu_info': {'num_cores': 12, 'cpu_info': 'Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz', 'mhz_per_cpu': 3500.0}, 'memory_total': 67211702272, 'memory_available': 55727394816}, 'test_id': None, 'run_date': '2020-06-05T15:12:15.905469Z', 'tensorflow_version': {'version': '1.14.0', 'git_hash': 'unknown'}, 'tensorflow_environment_variables': [], 'run_parameters': [{'name': 'batch_size', 'long_value': 52}, {'name': 'dtype', 'string_value': "<dtype: 'float32'>"}, {'name': 'num_workers', 'long_value': 1}, {'name': 'resnet_size', 'string_value': '50'}, {'name': 'resnet_version', 'string_value': '2'}, {'name': 'synthetic_data', 'bool_value': 'False'}, {'name': 'train_epochs', 'long_value': 20}]}
+I0605 23:12:17.231616 140224712554240 resnet_run_loop.py:695] Starting cycle: 0/1
+I0605 23:12:17.231667 140224712554240 resnet_run_loop.py:714] Starting to evaluate.
+I0605 23:12:17.302865 140224712554240 estimator.py:1145] Calling model_fn.
+W0605 23:12:17.305806 140224712554240 deprecation.py:323] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_model.py:810: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+W0605 23:12:17.441146 140224712554240 deprecation.py:323] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_model.py:1324: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+W0605 23:12:17.522454 140224712554240 deprecation.py:323] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_model.py:767: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.  In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.batch_normalization` documentation).
+W0605 23:12:17.570260 140224712554240 deprecation_wrapper.py:119] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_model.py:443: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0605 23:12:17.575546 140224712554240 deprecation.py:506] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_model.py:618: calling reduce_max_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+W0605 23:12:17.577375 140224712554240 deprecation_wrapper.py:119] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_model.py:622: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+W0605 23:12:17.584073 140224712554240 deprecation.py:323] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_model.py:635: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0605 23:12:17.584865 140224712554240 deprecation_wrapper.py:119] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_model.py:636: The name tf.floordiv is deprecated. Please use tf.math.floordiv instead.
+
+W0605 23:12:21.862885 140224712554240 deprecation.py:323] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_model.py:1352: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+W0605 23:12:21.863883 140224712554240 deprecation.py:506] From /home/zxc/anaconda2/envs/tensorflow16-py36/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0605 23:12:22.059678 140224712554240 deprecation.py:323] From /home/zxc/anaconda2/envs/tensorflow16-py36/lib/python3.6/site-packages/tensorflow/python/ops/losses/losses_impl.py:121: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+I0605 23:12:22.145735 140224712554240 estimator.py:1147] Done calling model_fn.
+I0605 23:12:22.158654 140224712554240 evaluation.py:255] Starting evaluation at 2020-06-05T23:12:22Z
+I0605 23:12:22.664108 140224712554240 monitored_session.py:240] Graph was finalized.
+2020-06-05 23:12:22.665037: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:1a:00.0
+2020-06-05 23:12:22.665490: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 1 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:68:00.0
+2020-06-05 23:12:22.665519: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2020-06-05 23:12:22.665526: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2020-06-05 23:12:22.665534: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10
+2020-06-05 23:12:22.665541: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10
+2020-06-05 23:12:22.665548: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10
+2020-06-05 23:12:22.665556: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10
+2020-06-05 23:12:22.665562: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-06-05 23:12:22.667381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0, 1
+2020-06-05 23:12:22.667459: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-06-05 23:12:22.667466: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 1 
+2020-06-05 23:12:22.667472: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N Y 
+2020-06-05 23:12:22.667476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 1:   Y N 
+2020-06-05 23:12:22.669345: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11436 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:1a:00.0, compute capability: 6.1)
+2020-06-05 23:12:22.669839: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 11039 MB memory) -> physical GPU (device: 1, name: TITAN Xp, pci bus id: 0000:68:00.0, compute capability: 6.1)
+W0605 23:12:22.670417 140224712554240 deprecation.py:323] From /home/zxc/anaconda2/envs/tensorflow16-py36/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+I0605 23:12:22.671677 140224712554240 saver.py:1280] Restoring parameters from /home/zxc/Liu/models-master-new/official/r1/resnet/model/model.ckpt-2539427
+2020-06-05 23:12:24.164347: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+I0605 23:12:24.202257 140224712554240 session_manager.py:500] Running local_init_op.
+I0605 23:12:24.287979 140224712554240 session_manager.py:502] Done running local_init_op.
+2020-06-05 23:12:27.783627: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2020-06-05 23:12:28.439861: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+I0605 23:48:12.360110 140224712554240 evaluation.py:275] Finished evaluation at 2020-06-05-23:48:12
+I0605 23:48:12.360315 140224712554240 estimator.py:2039] Saving dict for global step 2539427: accuracy = 0.73718, accuracy_top_5 = 0.9171, global_step = 2539427, loss = 1.6784378
+I0605 23:48:13.083724 140224712554240 estimator.py:2099] Saving 'checkpoint_path' summary for global step 2539427: /home/zxc/Liu/models-master-new/official/r1/resnet/model/model.ckpt-2539427
+I0605 23:48:13.084255 140224712554240 logger.py:147] Benchmark metric: {'name': 'accuracy', 'value': 0.737180010509491, 'unit': None, 'global_step': 2539427, 'timestamp': '2020-06-05T15:48:13.084216Z', 'extras': []}
+I0605 23:48:13.084362 140224712554240 logger.py:147] Benchmark metric: {'name': 'accuracy_top_5', 'value': 0.9171000123023987, 'unit': None, 'global_step': 2539427, 'timestamp': '2020-06-05T15:48:13.084346Z', 'extras': []}
+I0605 23:48:13.084424 140224712554240 logger.py:147] Benchmark metric: {'name': 'loss', 'value': 1.6784378290176392, 'unit': None, 'global_step': 2539427, 'timestamp': '2020-06-05T15:48:13.084411Z', 'extras': []}
+W0605 23:48:13.084513 140224712554240 deprecation.py:323] From /home/zxc/Liu/models-master-new/official/r1/resnet/resnet_run_loop.py:734: Estimator.export_savedmodel (from tensorflow_estimator.python.estimator.estimator) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function has been renamed, use `export_saved_model` instead.
+I0605 23:48:13.089591 140224712554240 estimator.py:1145] Calling model_fn.
+I0605 23:48:17.558144 140224712554240 estimator.py:1147] Done calling model_fn.
+W0605 23:48:17.558327 140224712554240 deprecation.py:323] From /home/zxc/anaconda2/envs/tensorflow16-py36/lib/python3.6/site-packages/tensorflow/python/saved_model/signature_def_utils_impl.py:201: build_tensor_info (from tensorflow.python.saved_model.utils_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This function will only be available through the v1 compatibility library as tf.compat.v1.saved_model.utils.build_tensor_info or tf.compat.v1.saved_model.build_tensor_info.
+I0605 23:48:17.558547 140224712554240 export_utils.py:170] Signatures INCLUDED in export for Classify: None
+I0605 23:48:17.558594 140224712554240 export_utils.py:170] Signatures INCLUDED in export for Regress: None
+I0605 23:48:17.558628 140224712554240 export_utils.py:170] Signatures INCLUDED in export for Predict: ['predict', 'serving_default']
+I0605 23:48:17.558655 140224712554240 export_utils.py:170] Signatures INCLUDED in export for Train: None
+I0605 23:48:17.558679 140224712554240 export_utils.py:170] Signatures INCLUDED in export for Eval: None
+2020-06-05 23:48:17.559310: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:1a:00.0
+2020-06-05 23:48:17.560019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 1 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:68:00.0
+2020-06-05 23:48:17.560049: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2020-06-05 23:48:17.560057: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2020-06-05 23:48:17.560063: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10
+2020-06-05 23:48:17.560070: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10
+2020-06-05 23:48:17.560076: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10
+2020-06-05 23:48:17.560082: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10
+2020-06-05 23:48:17.560089: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-06-05 23:48:17.561886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0, 1
+2020-06-05 23:48:17.561938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-06-05 23:48:17.561944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 1 
+2020-06-05 23:48:17.561947: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N Y 
+2020-06-05 23:48:17.561950: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 1:   Y N 
+2020-06-05 23:48:17.563185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11436 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:1a:00.0, compute capability: 6.1)
+2020-06-05 23:48:17.563855: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 11039 MB memory) -> physical GPU (device: 1, name: TITAN Xp, pci bus id: 0000:68:00.0, compute capability: 6.1)
+I0605 23:48:17.857253 140224712554240 saver.py:1280] Restoring parameters from /home/zxc/Liu/models-master-new/official/r1/resnet/model/model.ckpt-2539427
+I0605 23:48:18.515493 140224712554240 builder_impl.py:661] Assets added to graph.
+I0605 23:48:18.515733 140224712554240 builder_impl.py:456] No assets to write.
+I0605 23:48:19.446437 140224712554240 builder_impl.py:421] SavedModel written to: /home/zxc/Liu/models-master-new/official/r1/resnet/logs/temp-b'1591372093'/saved_model.pb
