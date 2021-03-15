@@ -45,7 +45,7 @@ the model size (options include ResNet-18 through ResNet-200). See
 
 
 
-###**Experiments**
+### **Experiments**
 **ImageNet Experiments**
 
 Model|Weights|Activations|Top-1(%)|Top-5(%)
@@ -55,7 +55,7 @@ ResNet-50|8|5|75.7|92.7
 ResNet-50|8|4|74.8|92.2
 
 
-###**Customization**
+### **Customization**
 if you want to train you own model, you should do like following steps:
 + Use `dorefa_quantization()` to quantize activations of floating-point model.
 + Print out all activations data by `tensor_print()`.
