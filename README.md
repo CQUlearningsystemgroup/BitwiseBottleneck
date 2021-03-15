@@ -1,4 +1,4 @@
-# Flexible Neural Network Activation Quantization with Bitwise Information Bottlenecks
+# Optimizing Information Theory Based Bitwise Bottlenecks for Efficient Mixed-Precision Activation Quantization
 
 ### **Introduction**
 Recent researches on information theory shed new light on the continuous 
